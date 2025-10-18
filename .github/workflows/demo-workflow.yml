@@ -7,8 +7,8 @@ on:
 jobs:
   myJobName:
     runs-on: ubuntu-latest
-	steps:
-	#each step is either an action (defined by uses: action/actionName@Version) or command executed on machine via run:
-	  - uses: actions/checkout@v5 #checks out repo to action runner machine
-	  - name: One-Line Script
-	    run: echo Hell0, World!
+    steps:
+    #each step is either an action (defined by uses: action/actionName@Version) or command executed on machine via run:
+      - uses: actions/checkout@v5 #checks out repo to action runner machine
+      - name: One-Line Script
+        run: echo Hell0, World!
