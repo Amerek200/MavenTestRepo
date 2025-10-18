@@ -15,7 +15,7 @@ class CalculatorTest {
     @Test //Annotation declaring method as Test Method.
     @DisplayName("We are testing addition")
     void additionTest() {
-        Assertions.assertEquals(5, calc.add(2, 3));
+        Assertions.assertEquals(50, calc.add(2, 3));
         Assertions.assertEquals(5, calc.add(3, 2));
         Assertions.assertEquals(50, calc.add(50, 0));
         Assertions.assertEquals(0, calc.add(0, 0));
