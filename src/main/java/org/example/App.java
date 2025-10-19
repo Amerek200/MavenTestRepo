@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Files;
 import java.sql.SQLException;
+import io.sapl.pdp.EmbeddedPolicyDecisionPoint;
 
 /**
  * Hello world!
@@ -15,6 +16,9 @@ import java.sql.SQLException;
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
+
+        EmbeddedPolicyDecisionPoint pdp;
+
         try (Connection conn = createConnection("MA.sqlite3")) {
             MaDbService dbService = new MaDbService(conn);
             System.out.println(dbService.getArtistsFromBandId(29));
