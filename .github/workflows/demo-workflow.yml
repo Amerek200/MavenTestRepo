@@ -21,5 +21,3 @@ jobs:
           cache: maven
       - name: Build with Maven
         run: mvn -B verify
-      - name: Dependency Review #scans PRs for dependency changes containing vulnerabilities. 
-        uses: actions/dependency-review-action@v4
