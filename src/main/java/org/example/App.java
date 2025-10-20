@@ -10,7 +10,7 @@ import java.nio.file.Files;
 import java.sql.SQLException;
 
 /**
- * Hello world!
+ * Hello world.
  */
 public class App {
     public static void main(String[] args) {
